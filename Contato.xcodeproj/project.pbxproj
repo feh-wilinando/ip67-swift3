@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522AEB3EED3724BCFA43937D /* Pods_ContatoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9E074D4599843488D1EFCC /* Pods_ContatoUITests.framework */; };
+		580222471DD3AF07004B461B /* CoreDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580222461DD3AF07004B461B /* CoreDataUtil.swift */; };
 		581AFA161DCB78B900D2C4CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA151DCB78B900D2C4CD /* AppDelegate.swift */; };
-		581AFA181DCB78B900D2C4CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA171DCB78B900D2C4CD /* ViewController.swift */; };
+		581AFA181DCB78B900D2C4CD /* FormularioContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA171DCB78B900D2C4CD /* FormularioContatoViewController.swift */; };
 		581AFA1B1DCB78B900D2C4CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581AFA191DCB78B900D2C4CD /* Main.storyboard */; };
 		581AFA1E1DCB78B900D2C4CD /* Contato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA1C1DCB78B900D2C4CD /* Contato.xcdatamodeld */; };
 		581AFA201DCB78B900D2C4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581AFA1F1DCB78B900D2C4CD /* Assets.xcassets */; };
 		581AFA231DCB78B900D2C4CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581AFA211DCB78B900D2C4CD /* LaunchScreen.storyboard */; };
 		581AFA2E1DCB78B900D2C4CD /* ContatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA2D1DCB78B900D2C4CD /* ContatoTests.swift */; };
 		581AFA391DCB78B900D2C4CD /* ContatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA381DCB78B900D2C4CD /* ContatoUITests.swift */; };
+		581AFA491DCB7AC300D2C4CD /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA481DCB7AC300D2C4CD /* Contato.m */; };
+		581AFA4B1DCB7D2000D2C4CD /* ListagemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA4A1DCB7D2000D2C4CD /* ListagemTableViewController.swift */; };
+		581AFA4D1DCB7D9F00D2C4CD /* ContatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA4C1DCB7D9F00D2C4CD /* ContatoDAO.swift */; };
+		581AFA4F1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA4E1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift */; };
+		588FA10A1DD212ED00B55B3E /* ContatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FA1091DD212ED00B55B3E /* ContatoTableViewCell.swift */; };
+		588FA10C1DD21AE900B55B3E /* MapaContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FA10B1DD21AE900B55B3E /* MapaContatoViewController.swift */; };
+		589BB3471DCCD6A8000C61FE /* GerenciadorDeAcoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589BB3461DCCD6A8000C61FE /* GerenciadorDeAcoes.swift */; };
+		CF6C016C0154C4EC4AF346D1 /* Pods_Contato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00029EA5467918E41089E06 /* Pods_Contato.framework */; };
+		F93C4E53B8CECF775B172BB0 /* Pods_ContatoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C72E9FDD4B3B80EE80BFA5 /* Pods_ContatoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C72E9FDD4B3B80EE80BFA5 /* Pods_ContatoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContatoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1622CD5E038AFB649451615D /* Pods-Contato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contato.release.xcconfig"; path = "Pods/Target Support Files/Pods-Contato/Pods-Contato.release.xcconfig"; sourceTree = "<group>"; };
+		3CEF087855FEE1482357E0C0 /* Pods-Contato.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contato.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Contato/Pods-Contato.debug.xcconfig"; sourceTree = "<group>"; };
+		3D9E074D4599843488D1EFCC /* Pods_ContatoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContatoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC716D29C3EC4340F57479B /* Pods-ContatoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContatoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContatoTests/Pods-ContatoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		480216D203587D9BB9D33E5F /* Pods-ContatoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContatoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContatoUITests/Pods-ContatoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DFD7BA20D26CFB03AB9711D /* Pods-ContatoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContatoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContatoUITests/Pods-ContatoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		580222461DD3AF07004B461B /* CoreDataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataUtil.swift; sourceTree = "<group>"; };
 		581AFA121DCB78B900D2C4CD /* Contato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		581AFA151DCB78B900D2C4CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		581AFA171DCB78B900D2C4CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		581AFA171DCB78B900D2C4CD /* FormularioContatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContatoViewController.swift; sourceTree = "<group>"; };
 		581AFA1A1DCB78B900D2C4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		581AFA1D1DCB78B900D2C4CD /* Contato.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Contato.xcdatamodel; sourceTree = "<group>"; };
 		581AFA1F1DCB78B900D2C4CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +68,18 @@
 		581AFA341DCB78B900D2C4CD /* ContatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		581AFA381DCB78B900D2C4CD /* ContatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoUITests.swift; sourceTree = "<group>"; };
 		581AFA3A1DCB78B900D2C4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		581AFA461DCB7AC200D2C4CD /* Contato-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Contato-Bridging-Header.h"; sourceTree = "<group>"; };
+		581AFA471DCB7AC300D2C4CD /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
+		581AFA481DCB7AC300D2C4CD /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
+		581AFA4A1DCB7D2000D2C4CD /* ListagemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListagemTableViewController.swift; sourceTree = "<group>"; };
+		581AFA4C1DCB7D9F00D2C4CD /* ContatoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoDAO.swift; sourceTree = "<group>"; };
+		581AFA4E1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormularioContatoDelegate.swift; sourceTree = "<group>"; };
+		588FA1091DD212ED00B55B3E /* ContatoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoTableViewCell.swift; sourceTree = "<group>"; };
+		588FA10B1DD21AE900B55B3E /* MapaContatoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaContatoViewController.swift; sourceTree = "<group>"; };
+		588FA10D1DD21D9200B55B3E /* Caelum.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Caelum.gpx; sourceTree = "<group>"; };
+		589BB3461DCCD6A8000C61FE /* GerenciadorDeAcoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerenciadorDeAcoes.swift; sourceTree = "<group>"; };
+		7F5F4BF15DF4548474D094A7 /* Pods-ContatoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContatoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContatoTests/Pods-ContatoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C00029EA5467918E41089E06 /* Pods_Contato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6C016C0154C4EC4AF346D1 /* Pods_Contato.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93C4E53B8CECF775B172BB0 /* Pods_ContatoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522AEB3EED3724BCFA43937D /* Pods_ContatoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +117,8 @@
 				581AFA2C1DCB78B900D2C4CD /* ContatoTests */,
 				581AFA371DCB78B900D2C4CD /* ContatoUITests */,
 				581AFA131DCB78B900D2C4CD /* Products */,
+				6F9A6B4A2842564070FFD375 /* Pods */,
+				990C831C9C21459254730E7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +136,23 @@
 			isa = PBXGroup;
 			children = (
 				581AFA151DCB78B900D2C4CD /* AppDelegate.swift */,
-				581AFA171DCB78B900D2C4CD /* ViewController.swift */,
+				581AFA171DCB78B900D2C4CD /* FormularioContatoViewController.swift */,
+				581AFA4A1DCB7D2000D2C4CD /* ListagemTableViewController.swift */,
 				581AFA191DCB78B900D2C4CD /* Main.storyboard */,
+				581AFA471DCB7AC300D2C4CD /* Contato.h */,
+				581AFA481DCB7AC300D2C4CD /* Contato.m */,
 				581AFA1F1DCB78B900D2C4CD /* Assets.xcassets */,
 				581AFA211DCB78B900D2C4CD /* LaunchScreen.storyboard */,
 				581AFA241DCB78B900D2C4CD /* Info.plist */,
 				581AFA1C1DCB78B900D2C4CD /* Contato.xcdatamodeld */,
+				581AFA461DCB7AC200D2C4CD /* Contato-Bridging-Header.h */,
+				581AFA4C1DCB7D9F00D2C4CD /* ContatoDAO.swift */,
+				581AFA4E1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift */,
+				589BB3461DCCD6A8000C61FE /* GerenciadorDeAcoes.swift */,
+				588FA1091DD212ED00B55B3E /* ContatoTableViewCell.swift */,
+				588FA10B1DD21AE900B55B3E /* MapaContatoViewController.swift */,
+				588FA10D1DD21D9200B55B3E /* Caelum.gpx */,
+				580222461DD3AF07004B461B /* CoreDataUtil.swift */,
 			);
 			path = Contato;
 			sourceTree = "<group>";
@@ -128,6 +175,29 @@
 			path = ContatoUITests;
 			sourceTree = "<group>";
 		};
+		6F9A6B4A2842564070FFD375 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF087855FEE1482357E0C0 /* Pods-Contato.debug.xcconfig */,
+				1622CD5E038AFB649451615D /* Pods-Contato.release.xcconfig */,
+				3FC716D29C3EC4340F57479B /* Pods-ContatoTests.debug.xcconfig */,
+				7F5F4BF15DF4548474D094A7 /* Pods-ContatoTests.release.xcconfig */,
+				480216D203587D9BB9D33E5F /* Pods-ContatoUITests.debug.xcconfig */,
+				4DFD7BA20D26CFB03AB9711D /* Pods-ContatoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		990C831C9C21459254730E7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C00029EA5467918E41089E06 /* Pods_Contato.framework */,
+				00C72E9FDD4B3B80EE80BFA5 /* Pods_ContatoTests.framework */,
+				3D9E074D4599843488D1EFCC /* Pods_ContatoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581AFA3D1DCB78B900D2C4CD /* Build configuration list for PBXNativeTarget "Contato" */;
 			buildPhases = (
+				F709EF82A3EDA309418432E0 /* [CP] Check Pods Manifest.lock */,
 				581AFA0E1DCB78B900D2C4CD /* Sources */,
 				581AFA0F1DCB78B900D2C4CD /* Frameworks */,
 				581AFA101DCB78B900D2C4CD /* Resources */,
+				F24C6A0312D589AED4B25116 /* [CP] Embed Pods Frameworks */,
+				7EB0FB7EF116A068DD1C7BFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581AFA401DCB78B900D2C4CD /* Build configuration list for PBXNativeTarget "ContatoTests" */;
 			buildPhases = (
+				9EC471C3D0A4C99C1A8B6015 /* [CP] Check Pods Manifest.lock */,
 				581AFA251DCB78B900D2C4CD /* Sources */,
 				581AFA261DCB78B900D2C4CD /* Frameworks */,
 				581AFA271DCB78B900D2C4CD /* Resources */,
+				718726C36FA1B33E09AB9BB4 /* [CP] Embed Pods Frameworks */,
+				8BE06B2CE00A8550560103F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581AFA431DCB78B900D2C4CD /* Build configuration list for PBXNativeTarget "ContatoUITests" */;
 			buildPhases = (
+				5405BCCCF1509A401BD10C54 /* [CP] Check Pods Manifest.lock */,
 				581AFA301DCB78B900D2C4CD /* Sources */,
 				581AFA311DCB78B900D2C4CD /* Frameworks */,
 				581AFA321DCB78B900D2C4CD /* Resources */,
+				7F71E723AD1B274C749D1D84 /* [CP] Embed Pods Frameworks */,
+				B3F60A1C8260DDDF0DD0CAEA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +275,7 @@
 				TargetAttributes = {
 					581AFA111DCB78B900D2C4CD = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					581AFA281DCB78B900D2C4CD = {
@@ -257,13 +337,159 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5405BCCCF1509A401BD10C54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		718726C36FA1B33E09AB9BB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContatoTests/Pods-ContatoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EB0FB7EF116A068DD1C7BFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Contato/Pods-Contato-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F71E723AD1B274C749D1D84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContatoUITests/Pods-ContatoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BE06B2CE00A8550560103F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContatoTests/Pods-ContatoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC471C3D0A4C99C1A8B6015 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3F60A1C8260DDDF0DD0CAEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContatoUITests/Pods-ContatoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F24C6A0312D589AED4B25116 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Contato/Pods-Contato-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F709EF82A3EDA309418432E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		581AFA0E1DCB78B900D2C4CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588FA10A1DD212ED00B55B3E /* ContatoTableViewCell.swift in Sources */,
+				581AFA491DCB7AC300D2C4CD /* Contato.m in Sources */,
 				581AFA1E1DCB78B900D2C4CD /* Contato.xcdatamodeld in Sources */,
-				581AFA181DCB78B900D2C4CD /* ViewController.swift in Sources */,
+				589BB3471DCCD6A8000C61FE /* GerenciadorDeAcoes.swift in Sources */,
+				581AFA181DCB78B900D2C4CD /* FormularioContatoViewController.swift in Sources */,
+				581AFA4F1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift in Sources */,
+				588FA10C1DD21AE900B55B3E /* MapaContatoViewController.swift in Sources */,
+				581AFA4D1DCB7D9F00D2C4CD /* ContatoDAO.swift in Sources */,
+				580222471DD3AF07004B461B /* CoreDataUtil.swift in Sources */,
+				581AFA4B1DCB7D2000D2C4CD /* ListagemTableViewController.swift in Sources */,
 				581AFA161DCB78B900D2C4CD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +563,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -387,6 +614,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -414,30 +642,40 @@
 		};
 		581AFA3E1DCB78B900D2C4CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CEF087855FEE1482357E0C0 /* Pods-Contato.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Contato/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.Contato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Contato/Contato-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		581AFA3F1DCB78B900D2C4CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1622CD5E038AFB649451615D /* Pods-Contato.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Contato/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.Contato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Contato/Contato-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		581AFA411DCB78B900D2C4CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC716D29C3EC4340F57479B /* Pods-ContatoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +690,7 @@
 		};
 		581AFA421DCB78B900D2C4CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5F4BF15DF4548474D094A7 /* Pods-ContatoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +705,7 @@
 		};
 		581AFA441DCB78B900D2C4CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 480216D203587D9BB9D33E5F /* Pods-ContatoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ContatoUITests/Info.plist;
@@ -479,6 +719,7 @@
 		};
 		581AFA451DCB78B900D2C4CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DFD7BA20D26CFB03AB9711D /* Pods-ContatoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ContatoUITests/Info.plist;
@@ -509,6 +750,7 @@
 				581AFA3F1DCB78B900D2C4CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		581AFA401DCB78B900D2C4CD /* Build configuration list for PBXNativeTarget "ContatoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +759,7 @@
 				581AFA421DCB78B900D2C4CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		581AFA431DCB78B900D2C4CD /* Build configuration list for PBXNativeTarget "ContatoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +768,7 @@
 				581AFA451DCB78B900D2C4CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
