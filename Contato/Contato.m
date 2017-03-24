@@ -7,11 +7,24 @@
 //
 
 #import "Contato.h"
-
+#import <CoreData/CoreData.h>
+#import "Contato-swift.h"
 
 @implementation Contato
 
 @dynamic nome,telefone,endereco,site,latitude,longitude,foto;
+
+
+//- (instancetype)init
+//{
+//    ContatoDAO* dao = [ContatoDAO new];
+//    
+//    NSManagedObjectContext* context = [[dao persistentContainer] viewContext];
+//    
+//    self = (Contato *)[NSEntityDescription insertNewObjectForEntityForName:@"Contato" inManagedObjectContext: context];
+//    
+//    return self;
+//}
 
 -(instancetype)initWithNome:(NSString *)nome andEndereco:(NSString *)endereco andTelefone:(NSString *)telefone andSite:(NSString *)site{
     

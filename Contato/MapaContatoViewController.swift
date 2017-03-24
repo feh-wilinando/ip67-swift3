@@ -15,13 +15,27 @@ class MapaContatoViewController: UIViewController, MKMapViewDelegate {
     
     let dao = ContatoDAO.sharedInstance()
     let locationManager = CLLocationManager()
-    var contatos:[Contato]!
+    
+    private var contatosRaw:[Contato] = Array()
+    
+    var contatos:[Contato] {
+        get {
+            
+            if contatosRaw.isEmpty {
+                contatosRaw = dao.list()
+            }
+            
+            return contatosRaw
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.mapa.delegate = self
+//        self.mapa.delegate = self
         
-        locationManager.requestWhenInUseAuthorization()
+//        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
         
         let botaoLocalizacao = MKUserTrackingBarButtonItem(mapView: self.mapa)
         self.navigationItem.rightBarButtonItem = botaoLocalizacao
@@ -36,13 +50,11 @@ class MapaContatoViewController: UIViewController, MKMapViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        contatos = dao.list()
-        
         self.mapa.addAnnotations(contatos)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        
         self.mapa.removeAnnotations(contatos)
     }
     
@@ -54,47 +66,50 @@ class MapaContatoViewController: UIViewController, MKMapViewDelegate {
         
         let identifier = "pino"
         
-        var pino: MKAnnotationView
+        let pino = makeAnnotationView(of: annotation, withIdentifier: identifier, over: mapView)
         
-        if let reusableAnnotation = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) {
-            pino = reusableAnnotation //as! MKPinAnnotationView
+    
+        if let contato = annotation as? Contato{
+        
+            pino.canShowCallout = true
+    //        pino.tintColor = UIColor.red
+    //        pino.animatesDrop = true
             
-        }else{
-            pino = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            let pinImage = #imageLiteral(resourceName: "pin")
+            
+            let size = CGSize(width: 50.0, height: 50.0)
+            UIGraphicsBeginImageContext(size)
+            pinImage.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+            let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            
+            
+            pino.image = resizedImage //somente com MKAnnotation
+            
+            if contato.foto != nil {
+                let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 32.0, height: 32.0))
+                
+                imageView.image = contato.foto
+                
+                pino.leftCalloutAccessoryView = imageView
+                
+            }
+            
+            pino.annotation = annotation
         }
-        
-        let contato = annotation as! Contato
-        
-        pino.canShowCallout = true
-//        pino.tintColor = UIColor.red
-//        pino.animatesDrop = true
-        
-        let pinImage = #imageLiteral(resourceName: "pin")
-        
-        let size = CGSize(width: 50.0, height: 50.0)
-        UIGraphicsBeginImageContext(size)
-        pinImage.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
-        let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        
-        
-        pino.image = resizedImage //somente com MKAnnotation
-        
-        if contato.foto != nil {
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 32.0, height: 32.0))
-            
-            imageView.image = contato.foto
-            
-            pino.leftCalloutAccessoryView = imageView
-            
-        }
-        
-        pino.annotation = annotation
-        
         
         return pino
     }
-
+    
+    private func makeAnnotationView(of annotation:MKAnnotation, withIdentifier id:String, over map:MKMapView) -> MKAnnotationView {
+        
+        guard let annotationView = map.dequeueReusableAnnotationView(withIdentifier: id) else {
+            return MKAnnotationView(annotation: annotation, reuseIdentifier: id)
+        }
+        
+        return annotationView
+    }
+    
    
 }

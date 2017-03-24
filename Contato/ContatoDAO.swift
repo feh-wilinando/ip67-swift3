@@ -12,14 +12,19 @@ import CoreData
 class ContatoDAO: CoreDataUtil {
     
     
-    private var contatos = [Contato]()
+    private var contatos:[Contato]
     static private var daoInstance:ContatoDAO!
     
     
     override private init() {
+        
+        
+        
+        self.contatos = [Contato]()
         super.init()
         self.cargaInicial()
         self.carregaContatos()
+        
     }
     
     static func sharedInstance() -> ContatoDAO {
@@ -99,6 +104,7 @@ class ContatoDAO: CoreDataUtil {
     }
     
     func IndexOf(_ contato:Contato) -> Int {
+        contatos.removeLast()
         return contatos.index(of: contato)!
     }
     

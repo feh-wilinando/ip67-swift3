@@ -11,7 +11,22 @@ import CoreData
 
 class CoreDataUtil: NSObject {
 
-    // MARK: - Core Data stack
+    
+//    private static var singleton:CoreDataUtil?
+//    // MARK: - Core Data stack
+//    
+//    private override init(){
+//        CoreDataUtil.singleton = self
+//        
+//    }
+//    static func sharedInstance() -> CoreDataUtil {
+//        
+//        guard let singleton = CoreDataUtil.singleton else {
+//            _ = CoreDataUtil()
+//        }
+//        
+//        return CoreDataUtil.singleton!
+//    }
     
     lazy var persistentContainer: NSPersistentContainer = {
         /*
@@ -20,6 +35,8 @@ class CoreDataUtil: NSObject {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
          */
+
+        
         let container = NSPersistentContainer(name: "Contato")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
@@ -37,6 +54,8 @@ class CoreDataUtil: NSObject {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+        
+        
         return container
     }()
     
@@ -44,6 +63,7 @@ class CoreDataUtil: NSObject {
     // MARK: - Core Data Saving support
     
     func saveContext () {
+        
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {

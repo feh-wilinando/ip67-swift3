@@ -21,9 +21,19 @@
 		581AFA4B1DCB7D2000D2C4CD /* ListagemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA4A1DCB7D2000D2C4CD /* ListagemTableViewController.swift */; };
 		581AFA4D1DCB7D9F00D2C4CD /* ContatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA4C1DCB7D9F00D2C4CD /* ContatoDAO.swift */; };
 		581AFA4F1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA4E1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift */; };
+		582EBC191E8553FF0032C33C /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582EBC181E8553FF0032C33C /* MyView.xib */; };
+		582EBC1B1E85542D0032C33C /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EBC1A1E85542D0032C33C /* MyView.swift */; };
+		5862724F1E7EFED2007DB3CB /* MeuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862724E1E7EFED2007DB3CB /* MeuViewController.swift */; };
+		586272511E7F0321007DB3CB /* MeuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586272501E7F0321007DB3CB /* MeuTableViewController.swift */; };
 		588FA10A1DD212ED00B55B3E /* ContatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FA1091DD212ED00B55B3E /* ContatoTableViewCell.swift */; };
 		588FA10C1DD21AE900B55B3E /* MapaContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FA10B1DD21AE900B55B3E /* MapaContatoViewController.swift */; };
 		589BB3471DCCD6A8000C61FE /* GerenciadorDeAcoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589BB3461DCCD6A8000C61FE /* GerenciadorDeAcoes.swift */; };
+		58B1ECBD1E82D782000A0C1C /* ExtensionCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B1ECBC1E82D782000A0C1C /* ExtensionCornerRadius.swift */; };
+		58B1ECBF1E82DB37000A0C1C /* MyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B1ECBE1E82DB37000A0C1C /* MyImageView.swift */; };
+		58B50D801E84B1E200C62FC5 /* TemperaturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B50D7E1E84B1E200C62FC5 /* TemperaturaViewController.swift */; };
+		58B50D811E84B1E200C62FC5 /* TemperaturaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B50D7F1E84B1E200C62FC5 /* TemperaturaViewController.xib */; };
+		58B524271E8196A700C9408F /* LisgatemManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B524261E8196A700C9408F /* LisgatemManualViewController.swift */; };
+		58D86C841E832C2400AA047F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D86C831E832C2400AA047F /* MapKit.framework */; };
 		CF6C016C0154C4EC4AF346D1 /* Pods_Contato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00029EA5467918E41089E06 /* Pods_Contato.framework */; };
 		F93C4E53B8CECF775B172BB0 /* Pods_ContatoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C72E9FDD4B3B80EE80BFA5 /* Pods_ContatoTests.framework */; };
 /* End PBXBuildFile section */
@@ -74,10 +84,20 @@
 		581AFA4A1DCB7D2000D2C4CD /* ListagemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListagemTableViewController.swift; sourceTree = "<group>"; };
 		581AFA4C1DCB7D9F00D2C4CD /* ContatoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoDAO.swift; sourceTree = "<group>"; };
 		581AFA4E1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormularioContatoDelegate.swift; sourceTree = "<group>"; };
+		582EBC181E8553FF0032C33C /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		582EBC1A1E85542D0032C33C /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		5862724E1E7EFED2007DB3CB /* MeuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuViewController.swift; sourceTree = "<group>"; };
+		586272501E7F0321007DB3CB /* MeuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuTableViewController.swift; sourceTree = "<group>"; };
 		588FA1091DD212ED00B55B3E /* ContatoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoTableViewCell.swift; sourceTree = "<group>"; };
 		588FA10B1DD21AE900B55B3E /* MapaContatoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaContatoViewController.swift; sourceTree = "<group>"; };
 		588FA10D1DD21D9200B55B3E /* Caelum.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Caelum.gpx; sourceTree = "<group>"; };
 		589BB3461DCCD6A8000C61FE /* GerenciadorDeAcoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerenciadorDeAcoes.swift; sourceTree = "<group>"; };
+		58B1ECBC1E82D782000A0C1C /* ExtensionCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionCornerRadius.swift; sourceTree = "<group>"; };
+		58B1ECBE1E82DB37000A0C1C /* MyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImageView.swift; sourceTree = "<group>"; };
+		58B50D7E1E84B1E200C62FC5 /* TemperaturaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperaturaViewController.swift; sourceTree = "<group>"; };
+		58B50D7F1E84B1E200C62FC5 /* TemperaturaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemperaturaViewController.xib; sourceTree = "<group>"; };
+		58B524261E8196A700C9408F /* LisgatemManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LisgatemManualViewController.swift; sourceTree = "<group>"; };
+		58D86C831E832C2400AA047F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7F5F4BF15DF4548474D094A7 /* Pods-ContatoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContatoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContatoTests/Pods-ContatoTests.release.xcconfig"; sourceTree = "<group>"; };
 		C00029EA5467918E41089E06 /* Pods_Contato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D86C841E832C2400AA047F /* MapKit.framework in Frameworks */,
 				CF6C016C0154C4EC4AF346D1 /* Pods_Contato.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +174,15 @@
 				588FA10B1DD21AE900B55B3E /* MapaContatoViewController.swift */,
 				588FA10D1DD21D9200B55B3E /* Caelum.gpx */,
 				580222461DD3AF07004B461B /* CoreDataUtil.swift */,
+				5862724E1E7EFED2007DB3CB /* MeuViewController.swift */,
+				586272501E7F0321007DB3CB /* MeuTableViewController.swift */,
+				58B524261E8196A700C9408F /* LisgatemManualViewController.swift */,
+				58B1ECBC1E82D782000A0C1C /* ExtensionCornerRadius.swift */,
+				58B1ECBE1E82DB37000A0C1C /* MyImageView.swift */,
+				58B50D7E1E84B1E200C62FC5 /* TemperaturaViewController.swift */,
+				58B50D7F1E84B1E200C62FC5 /* TemperaturaViewController.xib */,
+				582EBC181E8553FF0032C33C /* MyView.xib */,
+				582EBC1A1E85542D0032C33C /* MyView.swift */,
 			);
 			path = Contato;
 			sourceTree = "<group>";
@@ -191,6 +221,7 @@
 		990C831C9C21459254730E7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58D86C831E832C2400AA047F /* MapKit.framework */,
 				C00029EA5467918E41089E06 /* Pods_Contato.framework */,
 				00C72E9FDD4B3B80EE80BFA5 /* Pods_ContatoTests.framework */,
 				3D9E074D4599843488D1EFCC /* Pods_ContatoUITests.framework */,
@@ -275,8 +306,14 @@
 				TargetAttributes = {
 					581AFA111DCB78B900D2C4CD = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = K7WGQE7296;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					581AFA281DCB78B900D2C4CD = {
 						CreatedOnToolsVersion = 8.1;
@@ -318,6 +355,8 @@
 				581AFA231DCB78B900D2C4CD /* LaunchScreen.storyboard in Resources */,
 				581AFA201DCB78B900D2C4CD /* Assets.xcassets in Resources */,
 				581AFA1B1DCB78B900D2C4CD /* Main.storyboard in Resources */,
+				582EBC191E8553FF0032C33C /* MyView.xib in Resources */,
+				58B50D811E84B1E200C62FC5 /* TemperaturaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +519,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B1ECBF1E82DB37000A0C1C /* MyImageView.swift in Sources */,
+				58B50D801E84B1E200C62FC5 /* TemperaturaViewController.swift in Sources */,
 				588FA10A1DD212ED00B55B3E /* ContatoTableViewCell.swift in Sources */,
+				58B1ECBD1E82D782000A0C1C /* ExtensionCornerRadius.swift in Sources */,
 				581AFA491DCB7AC300D2C4CD /* Contato.m in Sources */,
 				581AFA1E1DCB78B900D2C4CD /* Contato.xcdatamodeld in Sources */,
 				589BB3471DCCD6A8000C61FE /* GerenciadorDeAcoes.swift in Sources */,
@@ -488,6 +530,10 @@
 				581AFA4F1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift in Sources */,
 				588FA10C1DD21AE900B55B3E /* MapaContatoViewController.swift in Sources */,
 				581AFA4D1DCB7D9F00D2C4CD /* ContatoDAO.swift in Sources */,
+				58B524271E8196A700C9408F /* LisgatemManualViewController.swift in Sources */,
+				582EBC1B1E85542D0032C33C /* MyView.swift in Sources */,
+				586272511E7F0321007DB3CB /* MeuTableViewController.swift in Sources */,
+				5862724F1E7EFED2007DB3CB /* MeuViewController.swift in Sources */,
 				580222471DD3AF07004B461B /* CoreDataUtil.swift in Sources */,
 				581AFA4B1DCB7D2000D2C4CD /* ListagemTableViewController.swift in Sources */,
 				581AFA161DCB78B900D2C4CD /* AppDelegate.swift in Sources */,
@@ -646,9 +692,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K7WGQE7296;
 				INFOPLIST_FILE = Contato/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.Contato;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.contato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Contato/Contato-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
@@ -663,9 +712,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K7WGQE7296;
 				INFOPLIST_FILE = Contato/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.Contato;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.contato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Contato/Contato-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";

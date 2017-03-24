@@ -13,7 +13,8 @@ class FormularioContatoViewController: UIViewController, UINavigationControllerD
 
     
     var contato:Contato!
-    var dao:ContatoDAO!
+    var dao:ContatoDAO
+    
     
     var delegate:FormularioContatoDelegate?
     
@@ -28,14 +29,16 @@ class FormularioContatoViewController: UIViewController, UINavigationControllerD
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        
         dao = ContatoDAO.sharedInstance()
+        super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
 //        self.enderecoTextField.delegate = self
+        
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(selecionarFoto(_:)))
         self.imageView.isUserInteractionEnabled = true
@@ -49,8 +52,8 @@ class FormularioContatoViewController: UIViewController, UINavigationControllerD
             enderecoTextField.text = contato.endereco
             telefoneTextField.text = contato.telefone
             siteTextField.text = contato.site
-            latitudeTextField.text = contato.latitude!.description
-            longitudeTextField.text = contato.longitude!.description
+            latitudeTextField.text = contato.latitude?.description
+            longitudeTextField.text = contato.longitude?.description
             
             if contato.foto != nil{
                 self.imageView.image = self.contato.foto
@@ -61,18 +64,26 @@ class FormularioContatoViewController: UIViewController, UINavigationControllerD
             self.navigationItem.rightBarButtonItem = botaoAlterar
             
         }else{
-            self.contato = dao.novoContato()
+            self.contato = Contato()
         }
     }
     
     //MARK: Foto
     @IBOutlet weak var botaoFoto: UIButton!
     @IBOutlet weak var imageView: UIImageView!
-    @IBAction func selecionarFoto(_ sender: AnyObject) {
+    
+    
+    private func pegarImage(da sourceType: UIImagePickerControllerSourceType){
         
         let imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
+        imagePicker.sourceType = sourceType
+        
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func selecionarFoto(_ sender: AnyObject) {
         
         if UIImagePickerController.isSourceTypeAvailable(.camera){
             
@@ -81,12 +92,11 @@ class FormularioContatoViewController: UIViewController, UINavigationControllerD
             
             let cancelar = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
             let tirarFoto = UIAlertAction(title: "Tirar Foto", style: .default){ (action) in
-                imagePicker.sourceType =
-                    .camera
+                self.pegarImage(da: .camera)
             }
             
             let escolherFoto = UIAlertAction(title: "Escolher da biblioteca", style: .default){ (action) in
-                imagePicker.sourceType = .photoLibrary
+                self.pegarImage(da: .photoLibrary)
             }
             
             
@@ -98,10 +108,8 @@ class FormularioContatoViewController: UIViewController, UINavigationControllerD
             
             
         }else{
-            imagePicker.sourceType = .photoLibrary            
+            pegarImage(da: .photoLibrary)
         }
-        
-        self.present(imagePicker, animated: true, completion: nil)
         
         
         
@@ -146,8 +154,14 @@ class FormularioContatoViewController: UIViewController, UINavigationControllerD
         self.contato.endereco = enderecoTextField.text
         self.contato.telefone = telefoneTextField.text
         self.contato.site = siteTextField.text
-        self.contato.latitude = NSDecimalNumber(value: Double(latitudeTextField.text!)!)
-        self.contato.longitude = NSDecimalNumber(value: Double(longitudeTextField.text!)!)
+        
+        if let latitude = Double(latitudeTextField.text!){
+            self.contato.latitude = latitude as NSNumber
+        }
+        
+        if let longitude = Double(longitudeTextField.text!){
+            self.contato.longitude =  longitude as NSNumber
+        }
         
     }
     
@@ -173,7 +187,7 @@ class FormularioContatoViewController: UIViewController, UINavigationControllerD
         let geocoder = CLGeocoder()
         
         geocoder.geocodeAddressString(self.enderecoTextField.text!){ resultado, error in
-        
+            
             if error == nil && resultado!.count > 0 {
                 let placemark = resultado![0]
                 let coordenada = placemark.location!.coordinate

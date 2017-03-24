@@ -39,10 +39,22 @@ class GerenciadorDeAcoes: NSObject {
             self.abrirNavegador()
         }
         
+        let exibeTemperatura = UIAlertAction(title: "Visualizar Temperatura", style: .default) { action in
+            
+            let myView = MyView(coder: <#T##NSCoder#>)
+            
+            
+            let temperaturaController = TemperaturaViewController(nibName: "TemperaturaViewController", bundle: Bundle.main)
+            temperaturaController.contato = self.contato
+            
+            controller.navigationController?.pushViewController(temperaturaController, animated: true)
+        }
+        
         alertView.addAction(cancelar)
         alertView.addAction(ligarParaContato)
         alertView.addAction(exibirContatoNoMapa)
         alertView.addAction(exibirSiteDoContato)
+        alertView.addAction(exibeTemperatura)
         
         
         self.controller.present(alertView, animated: true, completion: nil)
@@ -90,7 +102,15 @@ class GerenciadorDeAcoes: NSObject {
         
         UIApplication
             .shared
-                .open(URL(string: url)!, options: [:], completionHandler: nil)
+            .open(URL(string: url)!, options: [:]){
+                (success) in
+                print("Passei aquiiiii!!!")
+                if (success){
+                    print("\\o/")
+                }else{
+                    print("/o\\")
+                }
+        }
         
     }
     

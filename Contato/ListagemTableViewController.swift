@@ -10,22 +10,22 @@ import UIKit
 
 class ListagemTableViewController: UITableViewController, FormularioContatoDelegate {
     
-    var dao:ContatoDAO!
+    var dao:ContatoDAO
     var linhaDestacada: IndexPath?
+    static let cellIdentifier:String = "Cell"
     
     
     
     // MARK: - Life Cycle
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
         dao = ContatoDAO.sharedInstance()
+        super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(exibirMaisAcoes(gesture:)))
         self.tableView.addGestureRecognizer(longPress)
-        
 //        self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
 
@@ -36,12 +36,12 @@ class ListagemTableViewController: UITableViewController, FormularioContatoDeleg
     
     
     override func viewDidAppear(_ animated: Bool) {
-        if linhaDestacada != nil {
-            self.tableView.selectRow(at: self.linhaDestacada!, animated: true, scrollPosition: .middle)
+        if let linha = self.linhaDestacada {
+            self.tableView.selectRow(at: linha, animated: true, scrollPosition: .middle)
             
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-                self.tableView.deselectRow(at: self.linhaDestacada!, animated: true)
-                self.linhaDestacada = nil
+                self.tableView.deselectRow(at: linha, animated: true)
+                self.linhaDestacada = .none
             }
             
             
@@ -61,12 +61,12 @@ class ListagemTableViewController: UITableViewController, FormularioContatoDeleg
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dao.list().count
+        
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-
+    
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ContatoTableViewCell
         
@@ -104,8 +104,10 @@ class ListagemTableViewController: UITableViewController, FormularioContatoDeleg
 //            let point = segue.accessibilityActivationPoint
             
             
-            let formulario = segue.destination as! FormularioContatoViewController
-            formulario.delegate = self
+            if let formulario = segue.destination as? FormularioContatoViewController{
+                formulario.delegate = self
+            }
+            
             
             
         }
