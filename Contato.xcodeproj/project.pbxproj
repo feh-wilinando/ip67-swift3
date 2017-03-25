@@ -23,6 +23,8 @@
 		581AFA4F1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581AFA4E1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift */; };
 		582EBC191E8553FF0032C33C /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582EBC181E8553FF0032C33C /* MyView.xib */; };
 		582EBC1B1E85542D0032C33C /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EBC1A1E85542D0032C33C /* MyView.swift */; };
+		5851217D1E8574FC00E737B0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851217C1E8574FC00E737B0 /* Weather.swift */; };
+		5851217F1E85927500E737B0 /* meuTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851217E1E85927500E737B0 /* meuTest.swift */; };
 		5862724F1E7EFED2007DB3CB /* MeuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862724E1E7EFED2007DB3CB /* MeuViewController.swift */; };
 		586272511E7F0321007DB3CB /* MeuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586272501E7F0321007DB3CB /* MeuTableViewController.swift */; };
 		588FA10A1DD212ED00B55B3E /* ContatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588FA1091DD212ED00B55B3E /* ContatoTableViewCell.swift */; };
@@ -86,6 +88,8 @@
 		581AFA4E1DCB9E9200D2C4CD /* FormularioContatoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormularioContatoDelegate.swift; sourceTree = "<group>"; };
 		582EBC181E8553FF0032C33C /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
 		582EBC1A1E85542D0032C33C /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		5851217C1E8574FC00E737B0 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		5851217E1E85927500E737B0 /* meuTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = meuTest.swift; sourceTree = "<group>"; };
 		5862724E1E7EFED2007DB3CB /* MeuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuViewController.swift; sourceTree = "<group>"; };
 		586272501E7F0321007DB3CB /* MeuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuTableViewController.swift; sourceTree = "<group>"; };
 		588FA1091DD212ED00B55B3E /* ContatoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoTableViewCell.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 				58B50D7F1E84B1E200C62FC5 /* TemperaturaViewController.xib */,
 				582EBC181E8553FF0032C33C /* MyView.xib */,
 				582EBC1A1E85542D0032C33C /* MyView.swift */,
+				5851217C1E8574FC00E737B0 /* Weather.swift */,
 			);
 			path = Contato;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 		581AFA2C1DCB78B900D2C4CD /* ContatoTests */ = {
 			isa = PBXGroup;
 			children = (
+				5851217E1E85927500E737B0 /* meuTest.swift */,
 				581AFA2D1DCB78B900D2C4CD /* ContatoTests.swift */,
 				581AFA2F1DCB78B900D2C4CD /* Info.plist */,
 			);
@@ -534,6 +540,7 @@
 				582EBC1B1E85542D0032C33C /* MyView.swift in Sources */,
 				586272511E7F0321007DB3CB /* MeuTableViewController.swift in Sources */,
 				5862724F1E7EFED2007DB3CB /* MeuViewController.swift in Sources */,
+				5851217D1E8574FC00E737B0 /* Weather.swift in Sources */,
 				580222471DD3AF07004B461B /* CoreDataUtil.swift in Sources */,
 				581AFA4B1DCB7D2000D2C4CD /* ListagemTableViewController.swift in Sources */,
 				581AFA161DCB78B900D2C4CD /* AppDelegate.swift in Sources */,
@@ -545,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				581AFA2E1DCB78B900D2C4CD /* ContatoTests.swift in Sources */,
+				5851217F1E85927500E737B0 /* meuTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

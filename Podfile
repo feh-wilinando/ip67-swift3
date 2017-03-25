@@ -7,6 +7,9 @@ target 'Contato' do
 
   # Pods for Contato
   pod "TPKeyboardAvoiding"
+  pod “Alamofire”
+  pod “AlamofireImage”
+  pod “AlamofireObjectMapper”
 
   target 'ContatoTests' do
     inherit! :search_paths

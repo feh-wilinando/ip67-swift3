@@ -39,10 +39,7 @@ class GerenciadorDeAcoes: NSObject {
             self.abrirNavegador()
         }
         
-        let exibeTemperatura = UIAlertAction(title: "Visualizar Temperatura", style: .default) { action in
-            
-            let myView = MyView(coder: <#T##NSCoder#>)
-            
+        let exibeTemperatura = UIAlertAction(title: "Visualizar Temperatura", style: .default) { action in    
             
             let temperaturaController = TemperaturaViewController(nibName: "TemperaturaViewController", bundle: Bundle.main)
             temperaturaController.contato = self.contato
